@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from 'styled-components';
-import TrueCenteredWrapper from "./helpers/TrueCenteredWrapper";
+import TrueCenteredWrapper from "./wrappers/TrueCenteredWrapper";
 import './reset.css'
 
 const FullWindowDiv = styled.div`
@@ -31,11 +31,29 @@ const HeaderText = styled.h2`
   color: #fff;
 `
 
+const Link = styled.a`
+  transition: 0.15s;
+
+  :link, :visited {
+    color: #fff;
+  }
+
+  :hover {
+    color: #35dbc0;
+  }
+
+  :active {
+    color: #20b89e;
+  }
+`
+
 export default () => (
   <FullWindowDiv> 
     <CenteredContent>
       <RoundedIcon src="../assets/jtv-icon.png" alt="jtv-icon" />
-      <HeaderText>Website is under construction.<br />Please come back in a week or so!</HeaderText>
+      <HeaderText>
+        Website is under <Link href="https://github.com/saint-justin/portfolio-site-v3">construction.</Link><br />
+        Please come back in a week or so!</HeaderText>
     </CenteredContent>
   </FullWindowDiv>
 );
