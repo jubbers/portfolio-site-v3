@@ -1,7 +1,8 @@
-import * as React from "react";
+import * as React from 'react';
 import styled from 'styled-components';
-import TrueCenteredWrapper from "./wrappers/TrueCenteredWrapper";
-import './reset.css'
+import CenteredFlexContainer from "./components/CenteredContainer";
+import Card from './components/Card';
+import './reset.css';
 
 const FullWindowDiv = styled.div`
   width: 100vw;
@@ -10,18 +11,9 @@ const FullWindowDiv = styled.div`
   background-color: #0e3831;
 `;
 
-const CenteredContent = styled(TrueCenteredWrapper)`
-  display: flex;
+const CenteredColumn = styled(CenteredFlexContainer)`
   flex-direction: column;
-`
-
-const RoundedIcon = styled.img`
-  height: 128px;
-  width: 128px;
-
-  border-radius: 5%;
-  border: 2.5px solid #fff;
-  margin-bottom: 1em;
+  color: #fff;
 `
 
 const HeaderText = styled.h2`
@@ -29,31 +21,36 @@ const HeaderText = styled.h2`
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 200;
   color: #fff;
-`
+`  
 
-const Link = styled.a`
-  transition: 0.15s;
+const BodyText = styled.p`
+  margin-bottom: 2em;
 
-  :link, :visited {
-    color: #fff;
-  }
-
-  :hover {
-    color: #35dbc0;
-  }
-
-  :active {
-    color: #20b89e;
+  a {
+    text-decoration: underline;
   }
 `
 
 export default () => (
   <FullWindowDiv> 
-    <CenteredContent>
-      <RoundedIcon src="../assets/jtv-icon.png" alt="jtv-icon" />
-      <HeaderText>
-        Website is under <Link href="https://github.com/saint-justin/portfolio-site-v3">construction.</Link><br />
-        Please come back in a week or so!</HeaderText>
-    </CenteredContent>
+    <CenteredColumn>
+      <HeaderText>Hi there!</HeaderText>
+      <BodyText>
+        The site is still <a href="https://github.com/saint-justin/portfolio-site-v3">under construction</a>, <br/>
+        please check back in a few days for more examples!
+      </BodyText>
+      {/* Egg */}
+      <Card 
+        link='https://ianmatic.itch.io/egg' 
+        image='https://img.itch.zone/aW1hZ2UvMjczMTc5LzEzOTIyNzUuZ2lm/347x500/%2Bn39Xg.gif' 
+        title='Egg'
+        description='A Cute and Quick Platformer'
+        />
+
+      {/* <RoundedIcon src={icon} alt="jtv-icon" /> */}
+      {/* <HeaderText> */}
+        {/* Website is under <Link href="https://github.com/saint-justin/portfolio-site-v3">construction.</Link><br /> */}
+        {/* Please come back in a week or so!</HeaderText> */}
+    </CenteredColumn>
   </FullWindowDiv>
 );

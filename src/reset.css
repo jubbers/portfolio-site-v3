@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-/* Most rules borrowed from https://www.joshwcomeau.com/css/custom-css-reset/ */
+/* Most rule resets borrowed from https://www.joshwcomeau.com/css/custom-css-reset/ */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -17,4 +17,25 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Customizing links */
+a {
+  transition: 0.15s;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #fff;
+}
+a:hover {
+  color: #35dbc0;
+}
+a:active {
+  color: #20b89e;
+}
+
+/* Defaulting fonts to plex */ 
+* {
+  font-family: 'IBM Plex Mono', monospace;
 }
