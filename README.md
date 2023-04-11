@@ -1,6 +1,11 @@
-# Nano React App Default Typescript Template
+# Justin's Portfolio
 
-The default template project for [nano-react-app](https://github.com/nano-react-app/nano-react-app).
+### Hello there! 
+
+I'm Justin, a developer of all sorts. Games, web apps, and at-scale software are usually what I work on, but sometimes Discord bots or other smaller projects get added to that list. This particular portfolio website is a simple web app to demonstrate some of the neat little projects I've built up over the years. It's still in progress, so feel 
+
+# Development Information
+A modified site bootstrapping from [nano-react-app](https://github.com/nano-react-app/nano-react-app).
 
 - `npm start` — This will spawn a development server with a default port of `3000`.
 - `npm run build` — This will output a production build in the `dist` directory.
