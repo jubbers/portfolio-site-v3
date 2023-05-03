@@ -42,9 +42,10 @@ export default () => (
       {/* Egg */}
       <Card 
         link='https://ianmatic.itch.io/egg' 
+        repo='https://github.com/saint-justin/egg'
         image='https://img.itch.zone/aW1hZ2UvMjczMTc5LzEzOTIyNzUuZ2lm/347x500/%2Bn39Xg.gif' 
         title='Egg'
-        description='A Cute and Quick Platformer'
+        description={<p>Egg is a cute, quick game about a finding friends. It's written in pure C#, bootstrapping from <a href='https://monogame.net/'>MonoGame</a> as a sprite renderer. Everything else was hand-spun by myself and my team.</p>}
         />
 
       {/* <RoundedIcon src={icon} alt="jtv-icon" /> */}
