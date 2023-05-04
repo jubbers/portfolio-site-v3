@@ -19,6 +19,7 @@ const Card = ({link, image, title, description, repo}: WidgetProps) => {
   flex-direction: column;
 
   width: 30%;
+  min-width: 400px;
   `
 
   const BorderWrap = styled(CenteredContainer)`
