@@ -46,12 +46,12 @@ const Card = ({link, image, title, description, repo}: WidgetProps) => {
 
   const CardBody = styled(BorderWrap)`
     border-radius: 0 0 8px 8px;
-    /* margin-top: 8px; */
     border-top: 0;
     flex-direction: row;
     text-align: left;
 
     p {
+      align-self: flex-start;
       padding: 8px 12px;
     }
 
@@ -69,7 +69,6 @@ const Card = ({link, image, title, description, repo}: WidgetProps) => {
     padding: 0 6px;
     height: 100%;
     border-left: 2px solid #fff;
-
 
     a {
       display: flex;

@@ -5,8 +5,8 @@
         "moduleResolution": "Node",
         "paths": {
             "~components/*": ["./components*"],
-            "~styles/*": ["./src/styles*"],
-            "~media/*": ["./src/media*"]
+            "~styles/*": ["./styles*"],
+            "~media/*": ["./media*"]
         },
         "strict": true,
         "target": "ES2015"
