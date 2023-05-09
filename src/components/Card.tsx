@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import CenteredContainer from 'styles/CenteredContainer';
 import GithubLogo from 'media/icons/github-icon.png';
 import LinkIcon from 'media/icons/link-icon.png';
+import { AllColors, BgColors } from '~styles/Colors';
 
 export interface CardProps {
   link: string;
@@ -14,24 +15,20 @@ export interface CardProps {
 
 const Card = ({link, image, title, description, repo}: CardProps) => {
   const Container = styled.article`
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  width: 30%;
-  min-width: 400px;
+    width: 30%;
+    min-width: 400px;
   `
 
-  const BorderWrap = styled(CenteredContainer)`
-    border: 2px solid #fff;
-  `
 
-  const CardHeader = styled(BorderWrap)`
+  const CardHeader = styled(CenteredContainer)`
     width: 100%;
     aspect-ratio: 16 / 9;
     background-image: url(${image});
     background-size: cover;
     border-radius: 8px 8px 0 0;
-
 
     *, *:visited, *:active, *:hover {
       color: #fff;
@@ -43,11 +40,12 @@ const Card = ({link, image, title, description, repo}: CardProps) => {
     text-shadow: -0px 0px 8px #102f0c;
   `
 
-  const CardBody = styled(BorderWrap)`
+  const CardBody = styled(CenteredContainer)`
     border-radius: 0 0 8px 8px;
-    border-top: 0;
+    margin-top: 6px;
     flex-direction: row;
     text-align: left;
+    background-color: ${BgColors.secondary};
 
     p {
       align-self: flex-start;
@@ -66,14 +64,14 @@ const Card = ({link, image, title, description, repo}: CardProps) => {
     align-items: center;
 
     padding: 0 6px;
-    height: 100%;
-    border-left: 2px solid #fff;
+    height: 80%;
+    border-left: 2px solid ${AllColors.snowman};
 
     a {
       display: flex;
       border-radius: 100%;
-      padding: 3px;
-      border: 3px solid #FFF;
+      padding: 5px;
+      border: 2.5px solid ${AllColors.snowman};
 
       img {
         width: 32px;

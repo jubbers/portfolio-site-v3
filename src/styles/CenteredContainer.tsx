@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const CenteredFlexContainer = styled.main`
+const CenteredFlexContainer = styled.div`
   display: flex; 
 
   width: 100%;

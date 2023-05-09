@@ -3,16 +3,17 @@ import styled from 'styled-components';
 import CenteredFlexContainer from "styles/CenteredContainer";
 import Card, { CardProps } from 'components/Card';
 import 'styles/reset.css';
+import { AllColors, BgColors } from '~styles/Colors';
 
 const FullWindowDiv = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #0e3831;
+  background-color: ${BgColors.primary};
 `;
 
 const CenteredColumn = styled(CenteredFlexContainer)`
   flex-direction: column;
-  color: #fff;
+  color: ${AllColors.offwhite};
 `
 
 const HeaderText = styled.h2`
