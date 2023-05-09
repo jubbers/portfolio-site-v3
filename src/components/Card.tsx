@@ -4,7 +4,7 @@ import CenteredContainer from 'styles/CenteredContainer';
 import GithubLogo from 'media/icons/github-icon.png';
 import LinkIcon from 'media/icons/link-icon.png';
 
-interface WidgetProps {
+export interface CardProps {
   link: string;
   repo?: string;
   image: string; // relative path typed as a string
@@ -12,8 +12,7 @@ interface WidgetProps {
   description: React.ReactElement;
 }
 
-
-const Card = ({link, image, title, description, repo}: WidgetProps) => {
+const Card = ({link, image, title, description, repo}: CardProps) => {
   const Container = styled.article`
   display: flex;
   flex-direction: column;

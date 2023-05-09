@@ -4,9 +4,10 @@
         "jsx": "react",
         "moduleResolution": "Node",
         "paths": {
-            "~components/*": ["./components*"],
-            "~styles/*": ["./styles*"],
-            "~media/*": ["./media*"]
+            "~components/*": ["./components/*"],
+            "~layouts/*": ["./layouts/*"],
+            "~styles/*": ["./styles/*"],
+            "~media/*": ["./media/*"]
         },
         "strict": true,
         "target": "ES2015"
