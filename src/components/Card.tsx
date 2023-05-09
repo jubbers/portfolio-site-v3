@@ -1,8 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import CenteredContainer from './CenteredContainer'
-import GithubLogo from '../media/icons/github-icon.png'
-import LinkIcon from '../media/icons/link-icon.png'
+import CenteredContainer from 'styles/CenteredContainer';
+import GithubLogo from 'media/icons/github-icon.png';
+import LinkIcon from 'media/icons/link-icon.png';
 
 interface WidgetProps {
   link: string;

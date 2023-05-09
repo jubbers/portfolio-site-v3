@@ -1,9 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import CenteredFlexContainer from "./components/CenteredContainer";
-import Card from './components/Card';
-import DinoBanner from './media/banners/dino-land-banner.png'
-import './reset.css';
+
+import CenteredFlexContainer from "styles/CenteredContainer";
+import Card from 'components/Card';
+import DinoBanner from 'media/banners/dino-land-banner.png'
+import 'styles/reset.css';
 
 const FullWindowDiv = styled.div`
   width: 100vw;

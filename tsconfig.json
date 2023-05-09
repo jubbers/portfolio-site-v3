@@ -4,14 +4,12 @@
         "jsx": "react",
         "moduleResolution": "Node",
         "paths": {
-            "~*": [
-                "./*"
-            ]
+            "~components/*": ["./components*"],
+            "~styles/*": ["./src/styles*"],
+            "~media/*": ["./src/media*"]
         },
         "strict": true,
         "target": "ES2015"
     },
-    "include": [
-        "src/**/*"
-    ]
+    "include": ["src/**/*"]
 }
