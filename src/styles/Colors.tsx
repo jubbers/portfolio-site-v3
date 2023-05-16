@@ -1,41 +1,20 @@
 /**
- * Most of the colors here are brazenly stolen from Zeiplin. I'm a 
- * lot of things, but a color guru is not one of them.
- * 
- * https://blog.zeplin.io/dark-mode-color-palette
+ * Colors generated + tuned via RealTimeColors:
+ * https://realtimecolors.com/?colors=ffffff-111211-8ef0d9-fcf7e8-bb34e5
  */
 
-export const AllColors = {
-  // greyscale
-  snowman: '#fbfbfb',
-  offwhite: '#f7f7f7',
-  karl: '#edeced',
-  clooney: '#c1bec1',
-  gandalf: '#979197',
-  teflon: '#554d56',
-  dredge: '#323035',
-  deep: '#1e1c1f',
-
-  // primary color scale
-  yellow: '#fecf33',
-  light_orange: '#fdbd39',
-  orange: '#f69833',
-  peach: '#ee6723',
-
-  // secondary colors
-  green: '#c8cf2d',
-  turquoise: '#0dcfda',
-  cornflower_blue: '#419bf9',
-}
-
-export const BgColors = {
-  primary: AllColors.deep,
-  secondary: AllColors.teflon,
-  tertiary: AllColors.gandalf,
-};
-
-export const LinkColors = {
-  primary: AllColors.cornflower_blue,
-  selected: AllColors.offwhite,
-  hover: AllColors.turquoise,
+export const Colors = {
+  text: '#ffffff',
+  background: {
+    primary: '#111211',
+    secondary: '#1d1e1d'
+  },
+  button: {
+    primary: '#8ef0d9',
+    secondary: '#fcf7e8',
+    secondary_variant: '#fcfbf7',
+    tertiary: '#bb34e5',
+  },
+  border: '#fcf7e8',
+  accent: '#bb34e5',
 }

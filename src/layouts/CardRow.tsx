@@ -3,17 +3,17 @@ import styled from 'styled-components';
 import CenteredFlexContainer from "styles/CenteredContainer";
 import Card, { CardProps } from 'components/Card';
 import 'styles/reset.css';
-import { AllColors, BgColors } from '~styles/Colors';
+import { Colors } from '~styles/Colors';
 
 const FullWindowDiv = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-color: ${BgColors.primary};
+  background-color: ${Colors.background.primary};
 `;
 
 const CenteredColumn = styled(CenteredFlexContainer)`
   flex-direction: column;
-  color: ${AllColors.offwhite};
+  color: ${Colors.text};
 `
 
 const HeaderText = styled.h2`
@@ -21,7 +21,7 @@ const HeaderText = styled.h2`
   font-size: 64px;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 600;
-  color: #fff;
+  color: ${Colors.text};
 `  
 
 const BodyText = styled.p`
@@ -43,13 +43,14 @@ const Cards = styled.div`
 `
 
 interface CardRowProps {
+  id: string,
   title: string,
   description: string,
   cardInfo: CardProps[]
 }
 
-const CardRow = ({title, description, cardInfo}: CardRowProps) => (
-  <FullWindowDiv> 
+const CardRow = ({id, title, description, cardInfo}: CardRowProps) => (
+  <FullWindowDiv id={id}> 
     <CenteredColumn>
       {/* Text Content */}
       <HeaderText>{title}</HeaderText>
@@ -57,7 +58,7 @@ const CardRow = ({title, description, cardInfo}: CardRowProps) => (
       
       {/* Actual Cards */}
       <Cards>
-        { cardInfo.map(cardData => <Card {...cardData} />) }
+        { cardInfo.map(cardData => <Card {...cardData} key={`card--${cardData.title}`} />) }
       </Cards>
     </CenteredColumn>
   </FullWindowDiv>

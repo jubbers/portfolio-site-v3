@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import CenteredContainer from 'styles/CenteredContainer';
 import GithubLogo from 'media/icons/github-icon.png';
 import LinkIcon from 'media/icons/link-icon.png';
-import { AllColors, BgColors } from '~styles/Colors';
+import { Colors } from '~styles/Colors';
 
 export interface CardProps {
   link: string;
@@ -45,7 +45,7 @@ const Card = ({link, image, title, description, repo}: CardProps) => {
     margin-top: 6px;
     flex-direction: row;
     text-align: left;
-    background-color: ${BgColors.secondary};
+    background-color: ${Colors.background.secondary};
 
     p {
       align-self: flex-start;
@@ -65,13 +65,13 @@ const Card = ({link, image, title, description, repo}: CardProps) => {
 
     padding: 0 6px;
     height: 80%;
-    border-left: 2px solid ${AllColors.snowman};
+    border-left: 2px solid ${Colors.border};
 
     a {
       display: flex;
       border-radius: 100%;
       padding: 5px;
-      border: 2.5px solid ${AllColors.snowman};
+      border: 2.5px solid ${Colors.border};
 
       img {
         width: 32px;
