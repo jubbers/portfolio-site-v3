@@ -21,6 +21,12 @@ const HeaderContent = styled.div`
   width: 66.6%;
   justify-content: center;
   background-color: ${Colors.background.primary};
+  padding: 16px;
+
+  @media (max-width: 1260px) {
+    height: 100vh;
+    width: 100%;
+  }
 `
 
 const HeaderText = styled.h1`
@@ -35,6 +41,10 @@ const HeaderControls = styled.div`
   justify-content: space-around;
   background-color: ${Colors.background.primary};
   padding-right: 12px;
+
+  @media (max-width: 1260px) {
+    display: none;
+  }
 `
 const HeaderItem = styled.div`
   background-color: ${Colors.background.primary};

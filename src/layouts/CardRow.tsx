@@ -9,11 +9,16 @@ const FullWindowDiv = styled.div`
   width: 100%;
   height: 100vh;
   background-color: ${Colors.background.primary};
+
+  @media (max-width: 1260px) {
+    height: 100%;
+  }
 `;
 
 const CenteredColumn = styled(CenteredFlexContainer)`
   flex-direction: column;
   color: ${Colors.text};
+  padding: 16px;
 `
 
 const HeaderText = styled.h2`
@@ -40,6 +45,11 @@ const Cards = styled.div`
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
+
+  @media (max-width: 1260px) {
+    align-items: center;
+    flex-direction: column;
+  }
 `
 
 interface CardRowProps {
