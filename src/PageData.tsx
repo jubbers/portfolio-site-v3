@@ -38,14 +38,14 @@ export const EggCard: CardProps = {
   repo: "https://github.com/saint-justin/egg",
   image: "https://img.itch.zone/aW1hZ2UvMjczMTc5LzEzOTIyNzUuZ2lm/347x500/%2Bn39Xg.gif",
   title: "Egg",
-  description: <p>Egg is a cute, quick game about a finding friends. It's written in pure C#, bootstrapping from <a href='https://monogame.net/'>MonoGame</a> as a sprite renderer. Everything else was hand-spun by myself and my team.</p>
+  description: <p>Egg is a cute, quick 2D platformer about finding friends in the middle of a strange, unknown land. I did gameplay dev, tools dev, art, and art pipeline management. <br/><br/> It's written in pure C#, bootstrapping from <a href='https://monogame.net/'>MonoGame</a> as a sprite renderer. Everything else was hand-spun by myself and my team.</p>
 }
 
 export const ChangelingCard: CardProps = {
   link: "https://www.youtube.com/watch?v=_XydEZX07_0",
   image: ChangelingBanner,
   title: "",
-  description: <p>Changeling is an upcoming VR title from RIT's Frameless Labs and the studio Xena Ad Hoc. I was the founding lead engineer on the project, working on gameplay, systems, VFX, and more. The game is made in <a href='https://www.unrealengine.com/en-US'>UE4</a> but the repo isn't public, so just imagine really good C++ code.</p> 
+  description: <p>Changeling is a beautiful and heartbreaking upcoming VR title from RIT's Frameless Labs and the studio Xena Ad Hoc about a family dealing with loss and grief. <br/><br/> I was the founding lead engineer on the project, working on gameplay, systems, VFX, and tools. The game is made in <a href='https://www.unrealengine.com/en-US'>UE4</a> but the repo isn't public, so just imagine really good C++ code and spaghetti blueprints.</p> 
 }
 
 /* ----------- Header Items ----------- */
