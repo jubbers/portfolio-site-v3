@@ -16,6 +16,12 @@ const NavWrapper = styled.nav`
   border-top: 2px solid ${Colors.background.secondary};
   border-bottom: 2px solid ${Colors.background.secondary};
   background-color: ${Colors.background.primary};
+
+  @media (max-width: 770px) {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const NavList = styled.ul`
@@ -24,6 +30,10 @@ const NavList = styled.ul`
   padding: 8px;
   gap: 8px;
   list-style-type: none;
+
+  @media (max-width: 770px) {
+    flex-wrap: wrap;
+  }
 `
 
 const NavItem = styled.li`
@@ -56,6 +66,14 @@ const NavItem = styled.li`
     border: 2px solid #fff;
   }
 
+  @media (max-width: 744px) {
+    min-width: 0px;
+    /* width: 32px; */
+    a * {
+      margin: 0;
+    }
+  }
+
   // Fancy gradient-background
   position: relative;
   z-index: 1;
@@ -80,9 +98,15 @@ const NavItem = styled.li`
   }
 `
 
+const NavText = styled.span`
+  @media (max-width: 744px) {
+    display: none;
+  }
+`
+
 const JtvIcon = styled.img`
   height: 100%;
-  width: 36px;
+  max-width: 36px;
   border-radius: 8px;
   border: 2px solid ${Colors.background.secondary};
 `
@@ -91,5 +115,6 @@ export {
   NavWrapper, 
   NavList,
   NavItem,
+  NavText,
   JtvIcon
 }

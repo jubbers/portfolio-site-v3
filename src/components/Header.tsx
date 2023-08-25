@@ -12,6 +12,10 @@ const HeaderContainer = styled.header`
 
   color: ${Colors.text};
   background-color: ${Colors.text};
+
+  @media (max-width: 770px) {
+    height: 85vh;
+  }
 `
 
 const HeaderContent = styled.div`

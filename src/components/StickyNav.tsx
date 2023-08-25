@@ -2,7 +2,7 @@ import * as React from 'react';
 import JtvLogo from '~media/icons/jtv-icon.png'
 import { StickyNavData } from 'PageData';
 import LogoIcon, { LogoIconProps } from './LogoIcon';
-import { JtvIcon, NavItem, NavList, NavWrapper } from '~styles/StickyNav';
+import { JtvIcon, NavItem, NavList, NavText, NavWrapper } from '~styles/StickyNav';
 
 export interface StickyNavItem {
   href: any;
@@ -19,7 +19,7 @@ const StickyNav = () => {
     <NavItem>
       <a href={href} download={download}>
         { iconInfo && <LogoIcon iconType={iconInfo.iconType} alt={iconInfo.alt} size={18} /> }
-        { content }
+        { <NavText>{content}</NavText> }
       </a>
     </NavItem>)
   }

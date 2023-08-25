@@ -31,9 +31,14 @@ const HeaderText = styled.h2`
 
 const BodyText = styled.p`
   margin-bottom: 2em;
+  padding: 0 15%;
 
   a {
     text-decoration: underline;
+  }
+
+  @media (max-width: 1260px) {
+    padding: 0 20%;
   }
 `
 
@@ -49,6 +54,7 @@ const Cards = styled.div`
   @media (max-width: 1260px) {
     align-items: center;
     flex-direction: column;
+    gap: 24px;
   }
 `
 
