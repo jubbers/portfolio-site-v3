@@ -1,8 +1,38 @@
-import { CardProps } from "components/Card";
 import * as React from "react";
-import DinoBanner from '~media/banners/dino-land-banner.png'
-import ChangelingBanner from '~media/banners/changeling-banner.png'
+import CardMocksBanner from '~media/banners/card-mocks-banner.png';
+import ChangelingBanner from '~media/banners/changeling-banner.png';
+import DinoBanner from '~media/banners/dino-land-banner.png';
+import DraftBotBanner from '~media/banners/draft-bot-banner.png';
+import Resume from '~media/other/jtv_resume.pdf';
+import { StickyNavItem } from "~components/StickyNav";
+import { CardProps } from "components/Card";
 
+/* ----------- Web Projects ----------- */
+export const CardMocksCard: CardProps = {
+  link: 'https://mock-cards.jvaughn.org/',
+  repo: "https://github.com/saint-justin/card-mocks/",
+  image: CardMocksBanner,
+  title: "",
+  description: <p>Card Mocks is a tool to help card game designers rapidly prototype their games. Set up a template and drop in your spreadsheet to automatically generate all the cards needed for your next playtest! <br/><br/> Currently just elegant ReactJS + TS (hosted via <a href='https://firebase.google.com/'>Firebase</a>) with expansions planned for a Node backend and AWS tie-ins for user accounts, data storage, and more.</p>
+}
+
+export const DraftBotCard: CardProps = {
+  repo: "https://github.com/saint-justin/DraftBot/",
+  image: DraftBotBanner,
+  invite: 'https://discord.com/oauth2/authorize?client_id=756231279325872199&permissions=0&scope=bot%20applications.commands', 
+  title: "",
+  description: <p>Draft Bot is a handy Discord Bot to help you with your <a href='https://en.wikipedia.org/wiki/Magic:_The_Gathering'>Magic: The Gathering</a> needs in an easy-to-access place. Look up cards, check their prices, or even start a 'sealed' draft with friends anywhere on the planet! <br/><br/> Super lightweight containerized NodeJS Server running on an old laptop in my laundry room using AWS <a href='https://aws.amazon.com/kms/'>KMS</a> and <a href='https://aws.amazon.com/dynamodb/'>DynamoDB</a> for data storage.</p>
+}
+
+export const DinoCard: CardProps = {
+  link: "https://people.rit.edu/jtv6445/230/project4/",
+  repo: "https://github.com/saint-justin/dino-land",
+  image: DinoBanner,
+  title: "",
+  description: <p>Dino land is a DOM-based clicker game. Collect as many dinosaurs as you can as fast as possible. Imagine cookie clicker, but it's dinosaurs so its <em>way</em> cooler. <br/><br/>The whole project is pure HTML, CSS, & JS. No frameworks, package managers, or anything else was used in the projects development.</p>
+}
+
+/* ----------- Game Projects ----------- */
 export const EggCard: CardProps = {
   link: "https://ianmatic.itch.io/egg",
   repo: "https://github.com/saint-justin/egg",
@@ -11,17 +41,33 @@ export const EggCard: CardProps = {
   description: <p>Egg is a cute, quick game about a finding friends. It's written in pure C#, bootstrapping from <a href='https://monogame.net/'>MonoGame</a> as a sprite renderer. Everything else was hand-spun by myself and my team.</p>
 }
 
-export const DinoCard: CardProps = {
-  link: "https://people.rit.edu/jtv6445/230/project4/",
-  repo: "https://github.com/saint-justin/dino-land",
-  image: DinoBanner,
-  title: "",
-  description: <p>Dino land is a DOM-based clicker game. Get as many dinos as fast as possible. The whole project is pure HTML/CSS/JS, no frameworks or other tools were used. No dinosaurs were harmed in the making of this game.</p>
-}
-
 export const ChangelingCard: CardProps = {
   link: "https://www.youtube.com/watch?v=_XydEZX07_0",
   image: ChangelingBanner,
   title: "",
   description: <p>Changeling is an upcoming VR title from RIT's Frameless Labs and the studio Xena Ad Hoc. I was the founding lead engineer on the project, working on gameplay, systems, VFX, and more. The game is made in <a href='https://www.unrealengine.com/en-US'>UE4</a> but the repo isn't public, so just imagine really good C++ code.</p> 
 }
+
+/* ----------- Header Items ----------- */
+export const StickyNavData: StickyNavItem[] = [
+  { 
+    content: 'Github', href: 'https://github.com/saint-justin',
+    iconInfo: { iconType: 'github', alt: "Justin's GitHub homepage link" }
+  },
+  { 
+    content: 'LinkedIn', href: 'https://www.linkedin.com/in/justintvaughn/',
+    iconInfo: { iconType: 'linkedin', alt: "Justin's LinkedIn homepage link"}
+  },
+  { 
+    content: 'Twitter', href: 'https://twitter.com/sloth__wrangler', 
+    iconInfo: { iconType: 'twitter', alt: "Justin's Twitter account link" }
+  },
+  {
+    content: 'Site Source Code', href: 'https://github.com/saint-justin/portfolio-site-v3',
+    iconInfo: { iconType: 'code', alt: 'Source code link for this website'}
+  },
+  { 
+    content: 'Resume Download', href: { Resume }, download: 'jtv_resume.pdf',
+    iconInfo: { iconType: 'download', alt: 'Resume download button' }
+  },
+]

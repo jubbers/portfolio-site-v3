@@ -1,19 +1,21 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import CenteredContainer from 'styles/CenteredContainer';
-import GithubLogo from 'media/icons/github-icon.png';
-import LinkIcon from 'media/icons/link-icon.png';
+import DiscordLogo from '~media/icons/discord-icon.png'
+import GithubLogo from '~media/icons/github-icon.png';
+import LinkIcon from '~media/icons/link-icon.png';
 import { Colors } from '~styles/Colors';
 
 export interface CardProps {
-  link: string;
+  link?: string;
   repo?: string;
+  invite?: string;
   image: string; // relative path typed as a string
-  title: string;
+  title?: string;
   description: React.ReactElement;
 }
 
-const Card = ({link, image, title, description, repo}: CardProps) => {
+const Card = ({link, image, title, invite, description, repo}: CardProps) => {
   const Container = styled.article`
     display: flex;
     flex-direction: column;
@@ -22,13 +24,13 @@ const Card = ({link, image, title, description, repo}: CardProps) => {
     min-width: 400px;
   `
 
-
   const CardHeader = styled(CenteredContainer)`
     width: 100%;
     aspect-ratio: 16 / 9;
     background-image: url(${image});
     background-size: cover;
     border-radius: 8px 8px 0 0;
+    position: relative;
 
     *, *:visited, *:active, *:hover {
       color: #fff;
@@ -59,13 +61,16 @@ const Card = ({link, image, title, description, repo}: CardProps) => {
 
   const BodyIcons = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    /* flex-direction: row; */
+    /* justify-self: flex-end; */
+    /* align-self: flex-start; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px;
 
-    padding: 0 6px;
-    height: 80%;
-    border-left: 2px solid ${Colors.border};
+    /* height: 100%; */
+    gap: 8px;
 
     a {
       display: flex;
@@ -82,18 +87,19 @@ const Card = ({link, image, title, description, repo}: CardProps) => {
 
   return (
     <Container>
-      <a href={link}>
+      <a href={link || repo}>
         <CardHeader>
-          <HeaderText>{title}</HeaderText>
+          { title && <HeaderText>{title}</HeaderText> }
+          <BodyIcons>
+            { link && <a href={link} aria-label='Project link'><img alt='Link Icon' src={LinkIcon} /></a> }
+            { invite && <a href={invite} aria-label='Discord Invite link'><img alt='Discord Logo' src={DiscordLogo} /></a>}
+            { repo && <a href={repo} aria-label='Github repository link'><img alt='Github Logo' src={GithubLogo} /></a> }
+          </BodyIcons>
         </CardHeader>
       </a>
 
       <CardBody>
         { description }
-        <BodyIcons>
-          <a href={link} aria-label='Project Link'><img alt='Link Icon' src={LinkIcon} /></a>
-          { repo && <a href={repo} aria-label='Github repository link'><img alt='Github Logo' src={GithubLogo} /></a>}
-        </BodyIcons>
       </CardBody>
 
       {/* <CardBody >

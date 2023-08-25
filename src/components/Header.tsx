@@ -2,12 +2,13 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Colors } from '~styles/Colors';
 import HeaderButton from '~components/HeaderButton';
+import FancyText from '~styles/FancyText';
 
-const FullScreenDiv = styled.header`
+const HeaderContainer = styled.header`
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 95vh; // leaving 5% vh for the sticky nav
+  height: 92.5vh; // leaving 7.5% vh for the sticky nav
 
   color: ${Colors.text};
   background-color: ${Colors.text};
@@ -16,22 +17,26 @@ const FullScreenDiv = styled.header`
 const HeaderContent = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  text-align: left;
+  justify-content: center;
   height: 100%;
   width: 66.6%;
-  justify-content: center;
+  padding: 7.5%;
   background-color: ${Colors.background.primary};
-  padding: 16px;
+
+  h1 {
+    font-size: 48pt;
+  }
+
+  h3 {
+    font-weight: 300;
+  }
 
   @media (max-width: 1260px) {
     height: 100vh;
     width: 100%;
   }
-`
-
-const HeaderText = styled.h1`
-  font-size: 48pt;
-  text-align: center;
 `
 
 const HeaderControls = styled.div`
@@ -40,41 +45,23 @@ const HeaderControls = styled.div`
   flex-direction: column;
   justify-content: space-around;
   background-color: ${Colors.background.primary};
-  padding-right: 12px;
 
   @media (max-width: 1260px) {
     display: none;
   }
 `
-const HeaderItem = styled.div`
-  background-color: ${Colors.background.primary};
-  width: 100%;
-  height: 48%;
-`
-
-const FancyText = styled.span`
-  background: linear-gradient(120deg, ${Colors.button.primary}, ${Colors.accent});
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-`
 
 const Header = () => (
-  <FullScreenDiv>
+  <HeaderContainer>
     <HeaderContent>
-      <HeaderText>Howdy, I'm <FancyText>Justin</FancyText></HeaderText>
-      <h3>a software engineer, game developer, painter, and more.</h3>
+      <h1>Hiya, I'm <FancyText>Justin</FancyText></h1>
+      <h3><FancyText>engineer,</FancyText> designer, artist, climber, former EMT, and more</h3>
     </HeaderContent>
     <HeaderControls>
-      <HeaderItem>
-        <HeaderButton text='Web Dev' href='#games' hexColor={Colors.button.primary}/>
-      </HeaderItem>
-      <HeaderItem>
-        <HeaderButton text='Games' href='#games' hexColor={Colors.button.tertiary}/>
-      </HeaderItem>
+      <HeaderButton text='Web' href='#games' hexColor={Colors.button.primary}/>
+      <HeaderButton text='Games' href='#games' hexColor={Colors.button.tertiary}/>
     </HeaderControls>
-
-  </FullScreenDiv>
+  </HeaderContainer>
 )
 
 export default Header;

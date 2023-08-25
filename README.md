@@ -65,3 +65,10 @@ With Parcel's `--public-url` flag, use the following scripts for deployment:
 ```
 
 Then follow the normal procedure in GitHub Pages and select the `gh-pages` branch.
+
+## Attribution
+- Github, Twitter, & Linkedin icons made by [Freepik](https://www.freepik.com/)
+- Link icon by [Th Studio on Flaticon](https://www.flaticon.com/authors/th-studio)
+- Coding icon (the </> thing) made by [Kiranshastry on Flaticon](https://www.flaticon.com/authors/kiranshastry)
+- Download icon by [Bharat Icons on Flaticon](https://www.flaticon.com/authors/bharat-icons)
+- Discord icon by [Laisa Islam Ani on Flaticon](https://www.flaticon.com/authors/laisa-islam-ani) 

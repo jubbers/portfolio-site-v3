@@ -7,10 +7,11 @@ export const Colors = {
   text: '#ffffff',
   background: {
     primary: '#111211',
-    secondary: '#1d1e1d'
+    secondary: '#1d1e1d',
+    tertiary: '#674E64',
   },
   button: {
-    primary: '#8ef0d9',
+    primary: '#61cdb4',
     secondary: '#fcf7e8',
     secondary_variant: '#fcfbf7',
     tertiary: '#bb34e5',

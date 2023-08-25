@@ -14,11 +14,8 @@ const HeaderButton = ({text, href, hexColor}: HeaderButtonProps) => {
     height: 100%;
     align-items: center;
     justify-content: center;
-
     color: ${Colors.text};
     background-color: ${hexColor};
-    border-radius: 10%;
-
     font-size: 32pt;
 
     :hover {
@@ -32,7 +29,7 @@ const HeaderButton = ({text, href, hexColor}: HeaderButtonProps) => {
   `
 
   return (
-    <BigButton href={href}>{text}</BigButton>
+      <BigButton href={href}>{text}</BigButton>
   )
 }
 
