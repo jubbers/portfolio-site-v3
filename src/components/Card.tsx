@@ -21,10 +21,11 @@ const Card = ({link, image, title, invite, description, repo}: CardProps) => {
     flex-direction: column;
 
     width: 30%;
-    min-width: 450px;
+    min-width: 400px;
 
     @media (max-width: 1260px) {
       width: 60%;
+      min-width: 450px;
     }
   `
 

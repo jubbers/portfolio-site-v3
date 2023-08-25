@@ -7,7 +7,7 @@ import { Colors } from '~styles/Colors';
 
 const FullWindowDiv = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: ${Colors.background.primary};
 
   @media (max-width: 1260px) {
@@ -31,14 +31,9 @@ const HeaderText = styled.h2`
 
 const BodyText = styled.p`
   margin-bottom: 2em;
-  padding: 0 15%;
 
   a {
     text-decoration: underline;
-  }
-
-  @media (max-width: 1260px) {
-    padding: 0 20%;
   }
 `
 
@@ -49,12 +44,11 @@ const Cards = styled.div`
   gap: 12px;
   justify-content: center;
   align-items: stretch;
-  flex-wrap: wrap;
 
   @media (max-width: 1260px) {
     align-items: center;
     flex-direction: column;
-    gap: 24px;
+    flex-wrap: wrap;
   }
 `
 
