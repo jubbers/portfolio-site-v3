@@ -63,7 +63,9 @@ export const StickyNavData: StickyNavItem[] = [
     iconInfo: { iconType: 'code', alt: 'Source code link for this website'}
   },
   { 
-    content: 'Resume', href: { Resume }, download: 'jtv_resume.pdf',
+    content: 'Resume', 
+    href: 'https://people.rit.edu/jtv6445/resume/jtv_resume_2023_08_20.pdf', 
+    download: 'jtv-resume_2023-08-20.pdf',
     iconInfo: { iconType: 'download', alt: 'Resume download button' }
   },
 ]
