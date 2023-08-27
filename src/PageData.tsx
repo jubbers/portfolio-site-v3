@@ -3,7 +3,7 @@ import CardMocksBanner from '~media/banners/card-mocks-banner.png';
 import ChangelingBanner from '~media/banners/changeling-banner.png';
 import DinoBanner from '~media/banners/dino-land-banner.png';
 import DraftBotBanner from '~media/banners/draft-bot-banner.png';
-import Resume from '~media/other/jtv_resume.pdf';
+import PokedexBanner from '~media/banners/pokedex-banner.png';
 import { StickyNavItem } from "~components/StickyNav";
 import { CardProps } from "components/Card";
 
@@ -42,6 +42,13 @@ export const ChangelingCard: CardProps = {
   link: "https://www.youtube.com/watch?v=_XydEZX07_0",
   image: ChangelingBanner,
   description: <p>Changeling is a beautiful and heartbreaking upcoming VR title from RIT's Frameless Labs and the studio Xena Ad Hoc about a family dealing with loss and grief. <br/><br/> I was the founding lead engineer on the project, working on gameplay, systems, VFX, and tools. The game is made in <a href='https://www.unrealengine.com/en-US'>UE4</a> but the repo isn't public, so just imagine really good C++ code and spaghetti blueprints.</p> 
+}
+
+export const PokemonCard: CardProps = {
+  link: 'https://people.rit.edu/jtv6445/230/project2/',
+  repo: 'https://github.com/',
+  image: PokedexBanner,
+  description: <p>Ever wanted a pokedex that's worse than <a href='https://bulbapedia.bulbagarden.net/wiki/Main_Page'>Bulbapedia</a>, more saturated than an actual rainbow, and only gives you access to info about the first 151 Pokemon? Well it looks like <em>I</em> made the website for <em>you!</em> <br/><br/> This is a super old HTML/CSS/JS project. Nothing fancy, just a barebones site for learning. </p>
 }
 
 /* ----------- Header Items ----------- */
