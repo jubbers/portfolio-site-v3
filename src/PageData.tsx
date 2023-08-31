@@ -12,7 +12,7 @@ export const CardMocksCard: CardProps = {
   link: 'https://mock-cards.jvaughn.org/',
   repo: "https://github.com/saint-justin/card-mocks/",
   image: CardMocksBanner,
-  description: <p>Card Mocks is a tool to help card game designers rapidly prototype their games. Set up a template and drop in your spreadsheet to automatically generate all the cards needed for your next playtest! <br/><br/> Currently just elegant ReactJS + TS (hosted via <a href='https://firebase.google.com/'>Firebase</a>) with expansions planned for a Node backend and AWS tie-ins for user accounts, data storage, and more.</p>
+  description: <p>🚧Under Construction🚧<br/><br/>Card Mocks is a tool to help card game designers rapidly prototype their games. Set up a template and drop in your spreadsheet to automatically generate all the cards needed for your next playtest! <br/><br/> Currently just elegant ReactJS + TS (hosted via <a href='https://firebase.google.com/'>Firebase</a>) with expansions planned for a Node backend and AWS tie-ins for user accounts, data storage, and more.</p>
 }
 
 export const DraftBotCard: CardProps = {
