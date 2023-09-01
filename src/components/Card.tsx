@@ -92,13 +92,22 @@ const Card = ({link, image, title, invite, description, repo}: CardProps) => {
 
   return (
     <Container>
-      <a href={link || repo}>
+      <a href={link || repo} target="_blank" rel="noreferrer noopener">
         <CardHeader>
           { title && <HeaderText>{title}</HeaderText> }
           <BodyIcons>
-            { link && <a href={link} aria-label='Project link'><img alt='Link Icon' src={LinkIcon} /></a> }
-            { invite && <a href={invite} aria-label='Discord Invite link'><img alt='Discord Logo' src={DiscordLogo} /></a>}
-            { repo && <a href={repo} aria-label='Github repository link'><img alt='Github Logo' src={GithubLogo} /></a> }
+            { link && 
+              <a href={link} aria-label='Project link' target="_blank" rel="noreferrer noopener">
+                <img alt='Link Icon' src={LinkIcon} />
+              </a> }
+            { invite && 
+              <a href={invite} aria-label='Discord Invite link' target="_blank" rel="noreferrer noopener">
+                <img alt='Discord Logo' src={DiscordLogo} />
+              </a> }
+            { repo && 
+              <a href={repo} aria-label='Github repository link' target="_blank" rel="noreferrer noopener">
+                <img alt='Github Logo' src={GithubLogo} />
+              </a> }
           </BodyIcons>
         </CardHeader>
       </a>

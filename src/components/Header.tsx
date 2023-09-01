@@ -62,7 +62,7 @@ const Header = () => (
       <h3><FancyText>engineer,</FancyText> designer, artist, climber, former EMT, and more</h3>
     </HeaderContent>
     <HeaderControls>
-      <HeaderButton text='Web' href='#games' hexColor={Colors.button.primary}/>
+      <HeaderButton text='Web' href='#web' hexColor={Colors.button.primary}/>
       <HeaderButton text='Games' href='#games' hexColor={Colors.button.tertiary}/>
     </HeaderControls>
   </HeaderContainer>

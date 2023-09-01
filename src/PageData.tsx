@@ -46,7 +46,7 @@ export const ChangelingCard: CardProps = {
 
 export const PokemonCard: CardProps = {
   link: 'https://people.rit.edu/jtv6445/230/project2/',
-  repo: 'https://github.com/',
+  repo: 'https://github.com/saint-justin/pokedex',
   image: PokedexBanner,
   description: <p>Ever wanted a pokedex that's worse than <a href='https://bulbapedia.bulbagarden.net/wiki/Main_Page'>Bulbapedia</a>, more saturated than an actual rainbow, and only gives you access to info about the first 151 Pokemon? Well it looks like <em>I</em> made the website for <em>you!</em> <br/><br/> This is a super old HTML/CSS/JS project. Nothing fancy, just a barebones site for learning. </p>
 }

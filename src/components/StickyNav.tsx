@@ -17,7 +17,7 @@ const StickyNav = () => {
   const GenerateLiComponent = ({content, href, iconInfo, download}: StickyNavItem) => {
     return (
     <NavItem>
-      <a href={href} download={download}>
+      <a href={href} download={download} target="_blank" rel="noreferrer noopener">
         { iconInfo && <LogoIcon iconType={iconInfo.iconType} alt={iconInfo.alt} size={18} /> }
         { <NavText>{content}</NavText> }
       </a>
