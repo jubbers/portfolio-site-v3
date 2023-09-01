@@ -9,7 +9,7 @@ import { CardProps } from "components/Card";
 
 /* ----------- Web Projects ----------- */
 export const CardMocksCard: CardProps = {
-  link: 'https://mock-cards.jvaughn.org/',
+  link: 'https://mock-cards.web.app/',
   repo: "https://github.com/saint-justin/card-mocks/",
   image: CardMocksBanner,
   description: <p>Card Mocks is a tool to help card game designers rapidly prototype their games. Set up a template and drop in your spreadsheet to automatically generate all the cards needed for your next playtest! <br/><br/> Currently just elegant ReactJS + TS (hosted via <a href='https://firebase.google.com/'>Firebase</a>) with expansions planned for a Node backend and AWS tie-ins for user accounts, data storage, and more. <br/><br/>🚧 Please Note: Under Construction! 🚧</p>
