@@ -13,7 +13,7 @@ export default () => (
       id='web'
       title='Web Dev' 
       description='Honestly most of them are just JS/TS projects, but "Web Dev" is a pretty broad term...'
-      cardInfo={[DraftBotCard, CardMocksCard, DinoCard]} />
+      cardInfo={[CardMocksCard, DraftBotCard, DinoCard]} />
     <CardRow 
       id='games'
       title='Game Dev' 
