@@ -59,7 +59,7 @@ const Header = () => (
   <HeaderContainer>
     <HeaderContent>
       <h1>Hiya, I'm <FancyText>Justin</FancyText></h1>
-      <h3><FancyText>engineer,</FancyText> designer, artist, climber, former EMT, and more</h3>
+      <h3><FancyText>engineer, designer, artist, and more</FancyText></h3>
     </HeaderContent>
     <HeaderControls>
       <HeaderButton text='Web' href='#web' hexColor={Colors.button.primary}/>
