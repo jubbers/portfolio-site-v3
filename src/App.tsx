@@ -11,8 +11,8 @@ export default () => (
     <StickyNav />
     <CardRow 
       id='web'
-      title='Traditional Dev' 
-      description='TypeScript projects mostly. Two helpful tools and one fun little game.'
+      title='Fancy Projects' 
+      description='Two helpful tools and one cute game.'
       cardInfo={[CardMocksCard, DraftBotCard, DinoCard]} />
     <CardRow 
       id='games'
